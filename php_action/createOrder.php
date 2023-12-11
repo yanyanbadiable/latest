@@ -31,7 +31,7 @@ if ($_POST) {
         $paid = $_POST['paid'];
         $dueValue = $_POST['dueValue'];
 
-        $sql = "INSERT INTO orders (order_date, sub_total, total_amount, discount, grand_total, paid, due, order_status) VALUES ('$orderDate', '$subTotalValue', '$totalAmountValue', '$discount', '$grandTotalValue', '$paid', '$dueValue', 1)";
+        $sql = "INSERT INTO orders (order_date, sub_total, total_amount, discount, grand_total, paid, due, order_status, user_id) VALUES ('$orderDate', '$subTotalValue', '$totalAmountValue', '$discount', '$grandTotalValue', '$paid', '$dueValue', 1, 1)";
 
         $order_id;
         $orderStatus = false;
